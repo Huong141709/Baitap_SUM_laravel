@@ -42,3 +42,11 @@ Route:: get ('/signup', [App\http\Requests\singupController::class,'index']);
 Route:: post (' ', [App\http\Requests\singupController::class,'displayInfor']);
 // Route:: post ('/signup', "App\http\Controllers\signupController@displayInfor");
 Route::get ('/getIndex',[App\http\Controllers\PageController::class,'getIndex']);
+
+Route::get('database',function (){
+    Schema::create('loaisanpham',function ($table){
+        $table->increments('id');
+        $table->string('ten',200);
+    });
+    echo "da thuc hien thanh cong ";
+});

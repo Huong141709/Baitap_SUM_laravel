@@ -16,43 +16,6 @@
 	<link rel="stylesheet" title="style" href="assets/dest/css/huong-style.css">
 </head>
 <body>
-<!-- @php $gio= gmdate ("H",time()+ 3600*7);@endphp
-@if ($gio < 12) 
-    Chào buổi sáng 
-@elseif($gio<18)
-    Chào buổi chiều
-@else 
-    Chào buổi tối
-@endif -->
-<div>
-            
-    use Carbon\Carbon;
-
-    $dayOfWeek = Carbon::now()->dayOfWeek;
-
-    switch ($dayOfWeek) {
-        case Carbon::MONDAY:
-            echo "Hôm nay là thứ hai";
-            break;
-        case Carbon::TUESDAY:
-            echo "Hôm nay là thứ ba";
-            break;
-        case Carbon::WEDNESDAY:
-            echo "Hôm nay là thứ tư";
-            break;
-        case Carbon::THURSDAY:
-            echo "Hôm nay là thứ năm";
-            break;
-        case Carbon::FRIDAY:
-            echo "Hôm nay là thứ sáu";
-            break;
-        case Carbon::SATURDAY:
-            echo "Hôm nay là thứ bảy";
-            break;
-        case Carbon::SUNDAY:
-            echo "Hôm nay là chủ nhật";
-            break;
-    }
 </div>
 
 	<div id="header">
